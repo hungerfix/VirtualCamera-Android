@@ -1,2 +1,178 @@
-# VirtualCamera-Android
-Virtual Camera App - Use any video as camera feed for IMO, WhatsApp, Messenger, and other video call apps
+# Virtual Camera Android App
+
+🎥 আপনার নির্বাচিত ভিডিওকে সরাসরি ক্যামেরা ফিড হিসেবে ব্যবহার করুন **IMO, WhatsApp, Facebook Messenger** এবং সব ভিডিও কল অ্যাপে।
+
+## 🎯 মূল বৈশিষ্ট্য
+
+✅ যেকোনো ভিডিও ফাইল সিলেক্ট করুন  
+✅ ভার্চুয়াল ক্যামেরা হিসেবে স্ট্রিম করুন  
+✅ IMO, WhatsApp, Messenger সাপোর্ট  
+✅ ভিডিও স্বয়ংক্রিয়ভাবে লুপ হয়  
+✅ সহজ এবং স্বজ্ঞাত ইউজার ইন্টারফেস  
+✅ **Android 5.0 থেকে Android 16 পর্যন্ত সমর্থন**
+
+## 📱 সিস্টেম প্রয়োজনীয়তা
+
+- **ন্যূনতম Android ভার্সন**: 5.0 (API 21)
+- **লক্ষ্য Android ভার্সন**: 15 (API 35)
+- **সর্বোচ্চ সমর্থিত**: Android 16 (API 36)
+
+## 🔐 প্রয়োজনীয় পারমিশন
+
+- 📷 **Camera** - ভার্চুয়াল ক্যামেরা অ্যাক্সেস
+- 📁 **Read External Storage** / **Read Media Video** - ভিডিও ফাইল পড়া
+- 🔊 **Record Audio** - অডিও রেকর্ডিং (যদি প্রয়োজন হয়)
+
+> **Android 13+ এ স্বয়ংক্রিয়ভাবে READ_MEDIA_VIDEO ব্যবহার করা হয়**
+
+## 🚀 ইনস্টলেশন
+
+```bash
+# রিপোজিটরি ক্লোন করুন
+git clone https://github.com/nasir016432650-creator/VirtualCamera-Android.git
+cd VirtualCamera-Android
+
+# Android Studio এ খুলুন
+open -a "Android Studio" .
+
+# অথবা সরাসরি খুলুন
+Android Studio → Open Project
+```
+
+## 💻 বিল্ড এবং চালান
+
+```bash
+# প্রজেক্ট বিল্ড করুন
+./gradlew build
+
+# ডিভাইসে ইনস্টল করুন
+./gradlew installDebug
+
+# অথবা Android Studio এ:
+# Build → Build Bundle(s) / APK(s) → Build APK(s)
+```
+
+## 📖 ব্যবহার গাইড
+
+### ধাপে ধাপে নির্দেশনা
+
+1. **অ্যাপ লঞ্চ করুন**
+   - হোম স্ক্রীন থেকে "Virtual Camera" খুলুন
+   - সমস্ত প্রয়োজনীয় পারমিশন দিন
+
+2. **ভিডিও সিলেক্ট করুন**
+   - "📁 Select Video" বাটন ট্যাপ করুন
+   - আপনার ডিভাইস থেকে কোনো ভিডিও ফাইল নির্বাচন করুন
+
+3. **স্ট্রীম শুরু করুন**
+   - "▶ Start Stream" বাটন ট্যাপ করুন
+   - একটি নোটিফিকেশন উপস্থিত হবে
+
+4. **ভিডিও কল করুন**
+   - IMO, WhatsApp, বা Facebook Messenger খুলুন
+   - ভিডিও কল শুরু করুন
+   - ক্যামেরা হিসেবে Virtual Camera নির্বাচন করুন
+
+5. **স্ট্রীম বন্ধ করুন**
+   - অ্যাপে ফিরে যান
+   - "⏹ Stop Stream" বাটন ট্যাপ করুন
+
+## ⚙️ প্রযুক্তিগত বিবরণ
+
+| বৈশিষ্ট্য | মূল্য |
+|---------|-------|
+| **ভাষা** | Kotlin |
+| **ন্যূনতম SDK** | 21 (Android 5.0) |
+| **লক্ষ্য SDK** | 35 (Android 15) |
+| **সংকলন SDK** | 35 (Android 15) |
+| **বিল্ড সিস্টেম** | Gradle |
+| **ফ্রেমওয়ার্ক** | AndroidX |
+
+### ব্যবহৃত লাইব্রেরি
+
+```gradle
+// Core
+androidx.core:core-ktx:1.13.1
+androidx.appcompat:appcompat:1.7.0
+
+// Material Design 3
+com.google.android.material:material:1.12.0
+
+// Media & Camera
+androidx.camera:camera-core:1.3.4
+androidx.media:media:1.7.0
+com.google.android.exoplayer:exoplayer-core:2.19.1
+
+// Async
+org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0
+
+// Logging
+com.jakewharton.timber:timber:5.0.1
+```
+
+## 🔄 Android সংস্করণ সামঞ্জস্য
+
+| Android ভার্সন | সমর্থন | নোট |
+|----------------|--------|------|
+| 5.0-8.0 | ✅ | সম্পূর্ণ সমর্থিত |
+| 9.0-11 | ✅ | সম্পূর্ণ সমর্থিত |
+| 12 | ✅ | Foreground Service সমর্থন |
+| 13 | ✅ | READ_MEDIA_VIDEO সমর্থন |
+| 14 | ✅ | সর্বশেষ API সমর্থন |
+| 15 | ✅ | **সর্বোচ্চ সমর্থিত সংস্করণ** |
+| 16 | ✅ | **পূর্ণ সামঞ্জস্য নিশ্চিত** |
+
+## 🐛 ট্রাবলশুটিং
+
+### সমস্যা: ভিডিও লোড হচ্ছে না
+
+**সমাধান:**
+- নিশ্চিত করুন ভিডিও ফাইল বৈধ এবং সমর্থিত ফরম্যাটে রয়েছে
+- অ্যাপ পুনরায় চালু করুন
+- ডিভাইস পুনরায় চালু করুন
+
+### সমস্যা: ক্যামেরা পারমিশন রিজেক্ট হচ্ছে
+
+**সমাধান:**
+- সেটিংস → অ্যাপ্লিকেশন → Virtual Camera → পারমিশন
+- সমস্ত প্রয়োজনীয় পারমিশন সক্ষম করুন
+- অ্যাপ পুনরায় চালু করুন
+
+### সমস্যা: IMO/WhatsApp-এ ভিডিও দেখা যাচ্ছে না
+
+**সমাধান:**
+- Virtual Camera সেবা চলছে তা নিশ্চিত করুন
+- ভিডিও কল অ্যাপে ক্যামেরা পারমিশন দিন
+- Virtual Camera আপনার ক্যামেরা সূচিতে দেখা যাচ্ছে তা চেক করুন
+
+## 📧 সাপোর্ট এবং ফিডব্যাক
+
+কোনো সমস্যা বা পরামর্শ থাকলে:
+- GitHub Issues এ রিপোর্ট করুন
+- ইমেইল করুন: nasir016432650@gmail.com
+
+## 📄 লাইসেন্স
+
+এই প্রজেক্ট **MIT লাইসেন্স** এর অধীন।
+
+```
+MIT License
+
+Copyright (c) 2024 Nasir Khan
+
+Permission is hereby granted, free of charge...
+```
+
+বিস্তারিত জন্য [LICENSE](LICENSE) ফাইল দেখুন।
+
+## 👨‍💻 ডেভেলপার
+
+**Nasir Khan**
+- GitHub: [@nasir016432650-creator](https://github.com/nasir016432650-creator)
+- ইমেইল: nasir016432650@gmail.com
+
+---
+
+**⭐ এই প্রজেক্ট পছন্দ হলে একটি Star দিন!**
+
+**🔔 আপডেট পেতে Watch করুন!**
