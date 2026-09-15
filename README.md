@@ -34,9 +34,6 @@ cd VirtualCamera-Android
 
 # Android Studio এ খুলুন
 open -a "Android Studio" .
-
-# অথবা সরাসরি খুলুন
-Android Studio → Open Project
 ```
 
 ## 💻 বিল্ড এবং চালান
@@ -47,9 +44,6 @@ Android Studio → Open Project
 
 # ডিভাইসে ইনস্টল করুন
 ./gradlew installDebug
-
-# অথবা Android Studio এ:
-# Build → Build Bundle(s) / APK(s) → Build APK(s)
 ```
 
 ## 📖 ব্যবহার গাইড
@@ -88,28 +82,6 @@ Android Studio → Open Project
 | **বিল্ড সিস্টেম** | Gradle |
 | **ফ্রেমওয়ার্ক** | AndroidX |
 
-### ব্যবহৃত লাইব্রেরি
-
-```gradle
-// Core
-androidx.core:core-ktx:1.13.1
-androidx.appcompat:appcompat:1.7.0
-
-// Material Design 3
-com.google.android.material:material:1.12.0
-
-// Media & Camera
-androidx.camera:camera-core:1.3.4
-androidx.media:media:1.7.0
-com.google.android.exoplayer:exoplayer-core:2.19.1
-
-// Async
-org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0
-
-// Logging
-com.jakewharton.timber:timber:5.0.1
-```
-
 ## 🔄 Android সংস্করণ সামঞ্জস্য
 
 | Android ভার্সন | সমর্থন | নোট |
@@ -138,41 +110,11 @@ com.jakewharton.timber:timber:5.0.1
 - সমস্ত প্রয়োজনীয় পারমিশন সক্ষম করুন
 - অ্যাপ পুনরায় চালু করুন
 
-### সমস্যা: IMO/WhatsApp-এ ভিডিও দেখা যাচ্ছে না
-
-**সমাধান:**
-- Virtual Camera সেবা চলছে তা নিশ্চিত করুন
-- ভিডিও কল অ্যাপে ক্যামেরা পারমিশন দিন
-- Virtual Camera আপনার ক্যামেরা সূচিতে দেখা যাচ্ছে তা চেক করুন
-
-## 📧 সাপোর্ট এবং ফিডব্যাক
-
-কোনো সমস্যা বা পরামর্শ থাকলে:
-- GitHub Issues এ রিপোর্ট করুন
-- ইমেইল করুন: nasir016432650@gmail.com
-
-## 📄 লাইসেন্স
-
-এই প্রজেক্ট **MIT লাইসেন্স** এর অধীন।
-
-```
-MIT License
-
-Copyright (c) 2024 Nasir Khan
-
-Permission is hereby granted, free of charge...
-```
-
-বিস্তারিত জন্য [LICENSE](LICENSE) ফাইল দেখুন।
-
 ## 👨‍💻 ডেভেলপার
 
 **Nasir Khan**
 - GitHub: [@nasir016432650-creator](https://github.com/nasir016432650-creator)
-- ইমেইল: nasir016432650@gmail.com
 
 ---
 
 **⭐ এই প্রজেক্ট পছন্দ হলে একটি Star দিন!**
-
-**🔔 আপডেট পেতে Watch করুন!**
